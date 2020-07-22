@@ -3,7 +3,9 @@
 
 import random
 import string
+import os
 
+FOLDER_PATH = os.path.dirname(os.path.realpath(__file__))
 WORDLIST_FILENAME = "words.txt"
 
 
@@ -15,7 +17,8 @@ def loadWords():
     take a while to finish.
     """
     print("Loading word list from file...")
-    inFile = open(WORDLIST_FILENAME, 'r')
+    file_path = '{}/{}'.format(FOLDER_PATH, WORDLIST_FILENAME)
+    inFile = open(file_path, 'r')
     line = inFile.readline()
     wordlist = line.split()
     print("  ", len(wordlist), "words loaded.")
