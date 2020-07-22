@@ -1,7 +1,8 @@
 # learning-python-with-games
 
 ## prerequisites
-
+- [Python](https://www.python.org/) >=3.7.7
+- [pip](https://pypi.org/project/pip/) >=20.0.2
 
 ## what's your number?
 ```
@@ -17,5 +18,13 @@
 
 ## hangman
 ```
-
+  $ python hangman/game.py 
+  Loading word list from file...
+    55909 words loaded.
+  Welcome to the game, Hangman!
+  I am thinking of a word that is 8 letters long.
+  -------------
+  You have 8 guesses left.
+  Available letters: abcdefghijklmnopqrstuvwxyz
+  Please guess a letter: 
 ```
